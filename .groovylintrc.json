@@ -1,0 +1,27 @@
+{
+    "extends": "recommended-jenkinsfile",
+    "rules": {
+        "CompileStatic": {
+            "enabled": false
+        },
+        "DuplicateListLiteral": {
+            "enabled": false
+        },
+        "DuplicateMapLiteral": {
+            "enabled": false
+        },
+        "DuplicateStringLiteral": {
+            "enabled": false
+        },
+        "LineLength": {
+            "enabled": false
+        },
+        "formatting.Indentation": {
+            "spacesPerIndentLevel": 4,
+            "severity": "info"
+        },
+        "NestedBlockDepth": {
+            "enabled": false
+        }
+    }
+}

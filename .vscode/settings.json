@@ -1,0 +1,4 @@
+{
+    /* This is affected by windows paths, use backslash */
+    "groovyLint.basic.config": ".groovylintrc.json"
+}

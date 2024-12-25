@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+        "nicolasvuillamy.vscode-groovy-lint",
+        "janjoerke.jenkins-pipeline-linter-connector"
+    ]
+}
