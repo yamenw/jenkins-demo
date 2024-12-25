@@ -10,6 +10,10 @@ jenkins:
     loggedInUsersCanDoAnything:
       allowAnonymousRead: true
 
+unclassified:
+  casCGlobalConfig:
+    configurationPath: ${CASC_JENKINS_CONFIG}
+
 jobs:
   - file: "${CONF_DIR}/test.groovy"
   - file: "${CONF_DIR}/with-file.groovy"
