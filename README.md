@@ -1,5 +1,6 @@
 # Jenkins CasC Demo
 
+> [!note]
 > This repository is just a small experiment/demo.
 
 ## How to Run
@@ -22,3 +23,5 @@
 3. <https://plugins.jenkins.io/job-dsl/>
 4. <https://github.com/jenkinsci/configuration-as-code-plugin/blob/master/docs/seed-jobs.md>
 5. <https://github.com/jenkinsci/configuration-as-code-groovy-plugin>
+6. <https://github.com/nvuillam/npm-groovy-lint#README>
+7. <https://github.com/CodeNarc/CodeNarc>
