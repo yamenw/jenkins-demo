@@ -11,7 +11,7 @@ pipelineJob('minimal-pipeline-job') {
                     branch('main')
                 }
             }
-            scriptPath('Jenkinsfile')
+            scriptPath('src/pipes/Jenkinsfile')
         }
     }
 }
