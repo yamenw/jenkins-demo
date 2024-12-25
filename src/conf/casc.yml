@@ -1,0 +1,5 @@
+jenkins:
+  systemMessage: "CasC test"
+
+jobs:
+  - file: "${CONF_DIR}/test.groovy"

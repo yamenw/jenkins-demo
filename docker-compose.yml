@@ -7,9 +7,11 @@ services:
       - "8081:8080"
     volumes:
       - jenkins_home:/var/jenkins_home
+      - ./src:/src
     environment:
       JAVA_OPTS: -Djenkins.install.runSetupWizard=false
       ADMIN_PASSWORD: admin
+      CONF_DIR: /src/jobs
     networks:
       - jenkins_network
 
