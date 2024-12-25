@@ -1,5 +1,14 @@
 jenkins:
   systemMessage: "CasC test"
+  securityRealm:
+    local:
+      allowsSignup: true
+      users: # Ideally, you should use external user databases like LDAP
+        - id: "admin"
+          password: "admin"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: true
 
 jobs:
   - file: "${CONF_DIR}/test.groovy"
