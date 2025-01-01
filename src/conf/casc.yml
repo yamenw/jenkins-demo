@@ -18,3 +18,4 @@ jobs:
   - file: "${CONF_DIR}/test.groovy"
   - file: "${CONF_DIR}/with-file.groovy"
   - file: "${CONF_DIR}/docker.groovy"
+  - file: "${CONF_DIR}/dockerfile.groovy"
