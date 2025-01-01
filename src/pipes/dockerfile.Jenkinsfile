@@ -1,7 +1,7 @@
 pipeline {
     agent {
         dockerfile {
-            file './src/pipes/docker/curl.Dockerfile'
+            filename './src/pipes/docker/curl.Dockerfile'
         }
     }
     stages {
