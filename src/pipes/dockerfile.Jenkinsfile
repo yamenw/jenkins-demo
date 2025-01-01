@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker {
+        dockerfile {
             file './src/pipes/docker/curl.Dockerfile'
         }
     }
