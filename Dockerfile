@@ -16,3 +16,7 @@ RUN jenkins-plugin-cli --plugins "job-dsl:1.90"
 RUN jenkins-plugin-cli --plugins "workflow-aggregator:600.vb_57cdd26fdd7"
 RUN jenkins-plugin-cli --plugins "git:5.6.0"
 RUN jenkins-plugin-cli --plugins "jobConfigHistory:1283.veb_dfb_00b_5ec0"
+RUN jenkins-plugin-cli --plugins "docker-workflow:580.vc0c340686b_54"
+
+# RUN jenkins-plugin-cli --plugins "docker-plugin:1.7.0"
+# You may not need this one
