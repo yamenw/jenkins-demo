@@ -8,15 +8,39 @@ services:
     volumes:
       - jenkins_home:/var/jenkins_home
       - ./src:/src
+      - jenkins-docker-certs:/certs/client:ro
     environment:
       JAVA_OPTS: -Djenkins.install.runSetupWizard=false
       CONF_DIR: /src/jobs
       CASC_JENKINS_CONFIG: /src/conf/casc.yml
+      DOCKER_HOST: tcp://docker:2376
+      DOCKER_CERT_PATH: /certs/client
+      DOCKER_TLS_VERIFY: "0"
     networks:
       - jenkins_network
+    privileged: true
+    depends_on:
+      - dind
+
+  dind:
+    image: docker:dind
+    privileged: true
+    networks:
+      jenkins_network:
+        aliases:
+          - docker
+    ports:
+      - "2375:2375"
+      - 2376
+    environment:
+       DOCKER_TLS_CERTDIR: /certs
+    volumes:
+      - jenkins-docker-certs:/certs/client
+      - jenkins_home:/var/jenkins_home
 
 volumes:
   jenkins_home:
+  jenkins-docker-certs:
 
 networks:
   jenkins_network:
